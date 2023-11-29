@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JoecosGarage</title>
+        <script>
+            function getInputContent() {
+                var input_content = document.getElementById("starter").value;
+                if(input_content != "")
+                {
+                    alert("听不懂思密达");
+                }else{
+                    alert("Please enter something!");
+                }
+            };
+        </script>
+        <link rel="stylesheet" href="/Users/joecos_kun/Desktop/Work/HTML/JoecosGarage/css/style.css">
+        <link rel="icon", href="/Users/joecos_kun/Desktop/Work/HTML/JoecosGarage/icon.jpg">
+    </head>
+
+    <body>
+        <!--顶部悬浮导航栏-->
+        <div class="empty_header"></div>
+        <div class="navigate_header">
+            <p>
+                <img src="/Users/joecos_kun/Desktop/Work/HTML/JoecosGarage/cover.png" width="170" height="65" align="center" class="cover_img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/Users/joecos_kun/Desktop/Work/HTML/JoecosGarage/index.html"><botton class="navigate_button button2">Main</botton></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/Users/joecos_kun/Desktop/Work/HTML/JoecosGarage/sheldon_wiki/sheldon_wiki.html"><botton class="navigate_button button2">SheldonWiki</botton></a>
+            </p>
+        </div>
+
+        <!--奇妙段落-->
+        <div class="mainbox">
+            <h1><b>Welcome to JoecosGarage!</h1>
+            <p>Long long ago, Joecos was born, and nothing happened. Yep, nothing happened. Maybe the world has grew older, maybe the universe has grew larger, maybe the president of the USA has changed for a new one, but from an alien's perspective, nothing has changed about this stupid planet and its stupid carbon based life's kingdom.</p>
+        </div>
+
+        <!--傻逼文本生成器-->
+        <div class="mainbox">
+            <textarea id="starter" class="inputarea" spellcheck="false" placeholder="what do you want to say to joecos..."></textarea>
+            <botton class="submit_button button2" onclick="getInputContent()">Submit</button>
+        </div>
+        
+    </body>
+
+    <p>--to be continued</p>
+
+
+
+
+
+</html>
