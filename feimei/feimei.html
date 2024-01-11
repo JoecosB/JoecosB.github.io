@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JoecosGarage-SheldonWiki</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon", href="../icon.jpg">
+        <script>
+            function checkfeimei()
+            {
+                alert("确定查看肥美照片吗？世界最大火批照片或许会给您带来生理不适！");
+                var pic = document.getElementById('feimei');
+                pic.style.visibility = 'visible';
+            };
+        </script>
+    </head>
+
+    <body>
+        <!--顶部悬浮导航栏-->
+        <div class="empty_header"></div>
+        <div class="navigate_header">
+            <p>
+                <img src="../cover.png" width="170" height="65" align="center" class="cover_img">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://joecosb.github.io"><botton class="navigate_button button2">Main</botton></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="../sheldon_wiki/sheldon_wiki.html"><botton class="navigate_button button2">SheldonWiki</botton></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="feimei.html"><botton class="navigate_button button2">FeiMei</botton></a>
+            </p>
+        </div>
+
+        <!--网页主体-->
+        <div class="mainbox">
+            <h1><b>我测！肥美！</h1>
+            <p>警告！肥美是世界上最大火批！！！</p>
+            <p>警告！肥美是世界上最大火批！！！</p>
+            <p>警告！肥美是世界上最大火批！！！</p>
+        </div>
+
+        <div class="mainbox">
+            <button class="ex_button button2" onclick="checkfeimei()">查看肥美照片</button><br>
+            <img src="imgs/feimei.jpg" width="1330" height="960" class="feimei" id="feimei">
+        </div>
+    
+
+    </body>
+</html>

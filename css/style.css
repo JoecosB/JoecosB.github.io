@@ -81,11 +81,8 @@ h1 {
 .ex_button {
     background-color: green;
     color: white;
-    border-color: green;
-    border-radius: 3px;
     width: fit-content;height: 30px;
     border-radius: 2px;
-    text-align: center;
     display: inline-block;
     font-size: 15px;
     cursor: pointer;
@@ -108,4 +105,17 @@ h1 {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
+  }
+  .point {
+    position:absolute;
+    left:50%; top:50%;
+  }
+  .pop {
+    width:500px; height:500px;
+    position:absolute;
+    left:-250px; top:-250px;
+    border:2px solid red;
+  }
+  .feimei {
+    visibility: hidden;
   }
