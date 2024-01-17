@@ -4,23 +4,13 @@
     <head>
         <meta charset="utf-8">
         <title>JoecosGarage</title>
-        <script>
-            function getInputContent() {
-                var input_content = document.getElementById("starter").value;
-                if(input_content != "")
-                {
-                    alert("听不懂思密达");
-                }else{
-                    alert("Please enter something!");
-                }
-            };
-        </script>
+        <script src="scripts/scripts.js"></script>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon", href="icon.jpg">
     </head>
 
     <body>
-        <!--顶部悬浮导航栏-->
+        <!-- 顶部悬浮导航栏 -->
         <div class="empty_header"></div>
         <div class="navigate_header">
             <p>
@@ -31,13 +21,23 @@
             </p>
         </div>
 
-        <!--奇妙段落-->
-        <div class="mainbox">
-            <h1><b>Welcome to JoecosGarage!</h1>
-            <p>Long long ago, Joecos was born, and nothing happened. Yep, nothing happened. Maybe the world has grew older, maybe the universe has grew larger, maybe the president of the USA has changed for a new one, but from an alien's perspective, nothing has changed about this stupid planet and its stupid carbon based life's kingdom.</p>
+        <!-- 弹出窗 -->
+        <div class="floating_box invisible" id="pop">
+            <div id="pop_content">
+                <p></p>
+            </div>
+            <div class="pop_cotainer">
+                <botton class="pop_button button2" onclick="hide_pop()">确认</botton>
+            </div>
         </div>
 
-        <!--傻逼文本生成器-->
+        <!-- 奇妙段落 -->
+        <div class="mainbox">
+            <h1><b>Welcome to JoecosGarage!</h1>
+            <p>JoecosGarage is a place where Joecos puts all his junk in here. Totally nothing but junk.</p>
+        </div>
+
+        <!-- 傻逼文本生成器 -->
         <div class="mainbox">
             <textarea id="starter" class="inputarea" spellcheck="false" placeholder="what do you want to say to joecos..."></textarea>
             <botton class="submit_button button2" onclick="getInputContent()">Submit</button>
